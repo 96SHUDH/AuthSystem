@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🔐 AuthSystem - Next.js Full Stack Authentication
 
-## Getting Started
+A robust and secure full-stack authentication system built with **Next.js**, **TypeScript**, and **MongoDB**. This project features a complete user lifecycle management system including signup, login, email verification, and protected routes using middleware.
 
-First, run the development server:
+## 🚀 Tech Stack
+
+- **Framework:** [Next.js 13+](https://nextjs.org/) (App Router)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Database:** [MongoDB](https://www.mongodb.com/)
+- **ORM:** [Mongoose](https://mongoosejs.com/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Email Service:** [Mailtrap](https://mailtrap.io/) (for testing email delivery)
+- **Authentication:** JWT (JSON Web Tokens) with secure HTTP-only cookies
+
+## ✨ Features
+
+- **User Registration:** Secure signup with hashed passwords (bcryptjs).
+- **Authentication:** User login with JWT token generation.
+- **Email Verification:** Automated email dispatch using Mailtrap to verify user accounts.
+- **Protected Routes:** `middleware.ts` implementation to protect private pages (e.g., Profile).
+- **Dynamic Navbar:** Responsive UI that changes based on login/verification status.
+- **Toasts:** Real-time success/error notifications using `react-hot-toast`.
+- **Async Handling:** Robust error handling and loading states for better UX.
+
+## 🛠️ Getting Started
+
+Follow these steps to set up the project locally.
+
+### 1. Clone the Repository
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone [https://github.com/yourusername/auth-system.git](https://github.com/yourusername/auth-system.git)
+cd auth-system
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
